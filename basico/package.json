@@ -1,0 +1,18 @@
+{
+  "name": "basic",
+  "version": "1.0.0",
+  "description": "Aplicativo Básico do NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "pw2_node_intro"
+  },
+  "author": "Marcio Henrique de Tulio",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2"
+  }
+}
