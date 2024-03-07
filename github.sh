@@ -4,7 +4,7 @@
 #na variável repositório, prefira a url do repositório baseada em https para nao termos que configurar SSH
 export name='Narutex 216 bits'
 export email="djxan@yahoo.com.br"
-export repositorio="https://github.com/Narutex216Bits/pw2_node_intro.git";
+export repositorio="https://github.com/Narutex216Bits/pw2_node_introb.git";
 
 #Daqui pra baixo mexa somente se for realmente necessário ou se souber o que está fazendo :P
 
