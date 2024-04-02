@@ -208,3 +208,25 @@ function removeAmout(accontName, amount){
 
     console.info(chalk.bgGreenBright.black(`o saque no valor: ${amount} foi realizado na conta: ${accontName}`))
 }
+
+function getAccountBalance(){
+    inquirer.prompt([
+        {
+            name: 'accountName',
+            message: 'Qual conta deseja olhar o saldo?'
+        }
+    ]).then((answer) =>{
+        const accountName = answer['accountName']
+
+        if (!checkAccount(accountName)){
+            return getAccountBalance()
+        }
+
+        const accountData = getAccount(accountName)
+
+        console.info(chalk.bgGreen.black(`--- | NODE JS Bank| ---`))
+        console.info(chalk.bgGreen.black(`--- | SALDO DA CONTA: ${accountName.toUpperCase()} | -------`))
+        console.info(chalk.bgGreen.black(`--- | SALDO DA CONTA: ${accountData.balance.toFixed(2)}| ---`))
+        console.info(chalk.bgGreen.black(`--- | NODE JS Bank| ---`))
+    } )
+}
