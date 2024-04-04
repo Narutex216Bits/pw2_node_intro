@@ -150,7 +150,7 @@ function getAccount(accountName){
 function withdraw(){
     inquirer.prompt([
         {
-            nome: 'accountName',
+            name: 'accountName',
             message: 'Qual deseja fazer a retirada?'
         }
     ]).then((answer) => {
