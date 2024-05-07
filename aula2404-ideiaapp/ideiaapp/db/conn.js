@@ -5,11 +5,6 @@ const sequelize = new Sequelize('ideias', 'root', '', {
     dialect: 'mysql',
 })
 
-try {
-    sequelize.authenticate()
-    console.log('Conectamos com sucesso o MySQL Xampp!')
-} catch (error) {
-    console.error(`Deu erro na conexão: ${error}`)
-}
+
 
 module.exports = sequelize
