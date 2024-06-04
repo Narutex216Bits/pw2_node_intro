@@ -1,1 +1,0 @@
-Create database ideias_db;
