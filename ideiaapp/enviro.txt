@@ -1,0 +1,7 @@
+#Azure Cloud Computer
+AZURE_URL_MYSQL=marcioideiasappgrupob.mysql.database.azure.com
+AZURE_SENHA_MYSQL=A592h671
+AZURE_USER_MYSQL=marcioideias
+
+npx dotenv-vault@latest new
+npx dotenv-vault@latest login
